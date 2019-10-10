@@ -11,7 +11,7 @@ username = driver.find_element(:id, 'login_field')
 password = driver.find_element(:id, 'password')
 
 username1=YAML.load_file('account.yml').fetch('username')
-password2=YAML.load_file('account.yml').fetch('password')
+password1=YAML.load_file('account.yml').fetch('password')
 
 signinBtn = driver.find_element(:name, "commit")
 signinBtn.click
